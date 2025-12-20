@@ -26,7 +26,7 @@ tipButtons.forEach((button) => {
     let cleanValue = textValue.replace("%", "");
 
     valuePorcentage = parseFloat(cleanValue);
-    console.log(valuePorcentage);
+    // console.log(valuePorcentage);
 
     calculation();
   });
@@ -38,8 +38,8 @@ function calculation() {
     const tipPorPerson = TotalTip / numberOfPeople;
     const totalPorPerson = (bill + TotalTip) / numberOfPeople;
 
-    console.log(totalPorPerson);
-    console.log(tipPorPerson);
+    // console.log(totalPorPerson);
+    // console.log(tipPorPerson);
 
     tipAmountValue.innerHTML = tipPorPerson.toFixed(2);
     totalPersonValue.innerHTML = totalPorPerson.toFixed(2);
@@ -48,7 +48,7 @@ function calculation() {
     totalPersonValue.innerHTML = "$0.00";
   }
 
-  console.log(bill);
+  // console.log(bill);
 }
 
 buttonReset.addEventListener("click", () => {
